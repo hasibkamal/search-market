@@ -17,6 +17,7 @@ class CreateMarketsTable extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('image')->nullable();
+            $table->text('location')->nullable();
             $table->text('address')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->tinyInteger('is_archive')->default(0);

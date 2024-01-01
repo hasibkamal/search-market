@@ -14,8 +14,12 @@
                     {!! Form::text('name',$market->name,['class'=>$errors->has('name')?'form-control is-invalid':'form-control required','placeholder'=>'Name']) !!}
                 </div>
                 <div class="col-md-6 form-group">
+                    {!! Form::label('location','Location',['class'=>'required-star']) !!}
+                    {!! Form::text('location',$market->location,['class'=>$errors->has('address')?'form-control is-invalid':'form-control required','placeholder'=>'Location']) !!}
+                </div>
+                <div class="col-md-6 form-group">
                     {!! Form::label('address','Address',['class'=>'required-star']) !!}
-                    {!! Form::text('address',$market->address,['class'=>$errors->has('name')?'form-control is-invalid':'form-control required','placeholder'=>'Address']) !!}
+                    {!! Form::text('address',$market->address,['class'=>$errors->has('address')?'form-control is-invalid':'form-control required','placeholder'=>'Address']) !!}
                 </div>
                 <div class="col-md-6 form-group">
                     {!! Form::label('status','Status',['class'=>'font-weight-bold required-star']) !!}

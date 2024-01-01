@@ -32,6 +32,7 @@ class MarketController extends Controller
 
         $market = new Market();
         $market->name = $request->input('name');
+        $market->location = $request->input('location');
         $market->address = $request->input('address');
         $market->status = $request->input('status');
         if($request->hasFile('image')){
@@ -65,6 +66,7 @@ class MarketController extends Controller
 
         $market                = Market::find($decodedId);
         $market->name          = $request->input('name');
+        $market->location       = $request->input('location');
         $market->address       = $request->input('address');
         $market->status        = $request->input('status');
         if($request->hasFile('image')){

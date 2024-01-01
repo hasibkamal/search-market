@@ -17,6 +17,10 @@
                         <div class="col-lg-8"> {{ $market->name }} </div>
                     </div>
                     <div class="row mb-2">
+                        <div class="col-lg-4 font-weight-bold"> Location </div>
+                        <div class="col-lg-8"> {{ $market->location }} </div>
+                    </div>
+                    <div class="row mb-2">
                         <div class="col-lg-4 font-weight-bold"> Address </div>
                         <div class="col-lg-8"> {{ $market->address }} </div>
                     </div>

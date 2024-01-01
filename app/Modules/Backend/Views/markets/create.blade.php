@@ -14,6 +14,10 @@
                     {!! Form::text('name','',['class'=>$errors->has('name')?'form-control is-invalid':'form-control required','placeholder'=>'Name']) !!}
                 </div>
                 <div class="col-md-6 form-group">
+                    {!! Form::label('location','Location',['class'=>'required-star']) !!}
+                    {!! Form::text('location','',['class'=>$errors->has('location')?'form-control is-invalid':'form-control required','placeholder'=>'Location']) !!}
+                </div>
+                <div class="col-md-6 form-group">
                     {!! Form::label('address','Address',['class'=>'required-star']) !!}
                     {!! Form::text('address','',['class'=>$errors->has('address')?'form-control is-invalid':'form-control required','placeholder'=>'Address']) !!}
                 </div>
