@@ -3,21 +3,21 @@
         <div class="menu-content">
             <div class="logo-2">
                 <div class="full-logo">
-                    <a href="index.html"><img src="assets/frontend/images/logo.svg"></a>
+                    <a href="{{ url('/') }}"><img src="/assets/frontend/images/logo.svg"></a>
                 </div>
                 <div class="half-logo">
-                    <a href="index.html"><img src="assets/frontend/images/logo.svg"></a>
+                    <a href="{{ url('/') }}"><img src="/assets/frontend/images/logo.svg"></a>
                 </div>
             </div>
             <div class="attr-nav">
                 <div class="search-container">
-                    <form action="#">
-                        <input type="text" name="fruit" id="product" class="form-control" placeholder="Search">
+                    {!! Form::open(['url'=>url('/'),'method'=>'get']) !!}
+                        {!! Form::text('search','',['class'=>'form-control','placeholder'=>'Search']) !!}
                         <button type="submit"><i class="fa fa-search"></i> <span> Search </span></button>
                         <div class="suggestions">
                             <ul></ul>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                 </div>
             </div>
             <!-- microphone -->

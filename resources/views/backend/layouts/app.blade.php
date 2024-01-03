@@ -10,7 +10,7 @@
 
     <!-- Font Awesome Icons -->
     <link rel="icon" type="image/x-icon" href="{{ url('/assets/backend/img/upload.png') }}">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+{{--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">--}}
     {!! Html::style('/assets/backend/plugins/fontawesome-free/css/all.min.css') !!}
     {!! Html::style('/assets/backend/plugins/toaster/css/toaster.min.css') !!}
     {!! Html::style('/assets/backend/dist/css/adminlte.min.css') !!}
