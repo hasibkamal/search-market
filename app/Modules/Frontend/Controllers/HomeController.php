@@ -38,4 +38,9 @@ class HomeController extends Controller
             ->get();
         return view("Frontend::shop",$data);
     }
+
+    public function shops()
+    {
+        return view('Frontend::shop-find');
+    }
 }

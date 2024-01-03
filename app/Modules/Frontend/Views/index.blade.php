@@ -1,5 +1,11 @@
 @extends('frontend.layouts.app')
 @section('content')
+
+    <!-- ========== market-map design Start hear========== -->
+    <div class="market-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d82591.88056519059!2d90.41549706512716!3d23.81575673254868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704312884055!5m2!1sen!2sbd" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- ======== market-map design end hear ======== -->
     <div class="multiple-market-section">
         <div class="container">
             <div class="title">
@@ -38,4 +44,7 @@
             </div>
         </div>
     </div>
+@endsection
+@section('external-script')
+
 @endsection

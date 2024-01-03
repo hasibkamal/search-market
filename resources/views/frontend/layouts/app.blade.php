@@ -56,6 +56,7 @@
 {!! Html::script('/assets/frontend/js/jquery.appear.js') !!}
 {!! Html::script('/assets/frontend/js/active-class.js') !!}
 {!! Html::script('/assets/frontend/js/main.js') !!}
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg" defer></script>
 @yield('external-script')
 
 
